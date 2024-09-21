@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    line-height: 1.6rem;
+    background-color: black;
+    overflow-x: hidden;
+}
+header{
+    width:100%;
+    height: auto;
+    top:0;
+    padding: 0 50px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+nav ul{
+    /* width:100%; */
+    font-size: 18px;
+    justify-content: right;
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav  ul li a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    color:green;
+}
+.logo{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo:hover{
+    color:green;
+    cursor: pointer;
+}
+
+
+.container{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.product{
+    background-color: rgb(30, 221, 78);
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    flex:1 1 200px;
+}
+.product:hover{
+    transform: scale(1.04);
+    background-color: aliceblue;
+}
+h1{
+    font-size: 80px;
+    font-weight: 300;
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    /* align-items: center; */
+}
+h1:hover{
+    color: red;
+    text-shadow: 0px 0px 5px red;
+}
+img{
+    max-width: 239px;
+}
+
+button{
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+button:hover{
+    color:white;
+    background-color: black;
+    border: 2px solid bisque;
+    /* border-radius: 25px; */
+}
+
+footer{
+    height: auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    /* margin: 0 15px; */
+    background-color: rgb(236, 226, 226);
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+    }
+
+    .product {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .product {
+        padding: 10px;
+    }
+}
